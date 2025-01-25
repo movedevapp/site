@@ -109,7 +109,7 @@ body {
 .hero .btn-second {
     padding: 0.8rem 1.5rem;
     color: #ffffff;
-    border: 1px #ffffff solid;
+    background: #00aeff;
     border-radius: 5px;
     text-decoration: none;
     font-size: 1rem;
@@ -123,7 +123,7 @@ body {
 
 .hero .btn-second:hover {
     border: 2px #00aeff solid;
-    color: #00aeff;
+    color: #fff;
 }
 
 /* About Section */
