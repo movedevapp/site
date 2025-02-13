@@ -6,19 +6,20 @@ body {
     color: #fff;
 }
 
+nav {
+    padding: 10px;
+}
 /* Navbar */
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px;
     background-color: #00021a;
     position: relative;
-    z-index: 1000;
-}
-
-.navbar .logo img {
-    width: 80px;
+    z-index: 1;
+    font-family: "Merriweather Sans", serif;
+    font-style: normal;
 }
 
 .nav-links {
@@ -243,8 +244,9 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .navbar img{
-        margin-right: 200px;
+    .navbar{
+        justify-content: space-between;
+        margin: 5%;
     }
     .nav-links {
         display: none; /* Oculta a navegação em dispositivos móveis */
@@ -253,7 +255,7 @@ footer {
         position: absolute;
         top: 60px;
         right: 20px;
-        background: #333;
+        background: #001c79;
         padding: 1rem;
         border-radius: 10px;
         width: 200px;
