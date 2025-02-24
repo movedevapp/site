@@ -127,7 +127,17 @@ nav {
     border: 2px #00aeff solid;
     color: #00aeff;
 }
-
+.img-lanca{
+    display: flex;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    
+}
+.imglanca{
+    background: rgb(0,153,51);
+background: linear-gradient(360deg, rgba(0,153,51,1) 0%, rgba(10,0,0,1) 67%);
+}
 /* About Section */
 #about {
     display: flex;
