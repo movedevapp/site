@@ -62,7 +62,7 @@ function insertMenu() {
                     <a href="https://x.com/Move_Ape?t=deMkv1NPmjApNOSk2hB3lA&s=09" target="_blank" class="social-icon">
                         <img src="images/twitter.svg" alt="Twitter" width="24" height="24">
                     </a>
-                    <a href="https://www.instagram.com/comunidade_move_ape/" target="_blank" class="social-icon">
+                    <a href="https://www.instagram.com/move_ape/" target="_blank" class="social-icon">
                         <img src="images/instagram.svg" alt="Instagram" width="24" height="24">
                     </a>
                 </li>
