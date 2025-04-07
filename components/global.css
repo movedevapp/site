@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'TT Runs';
+    src: url('../tt_runs/TT Runs Trial Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Runs';
+    src: url('../tt_runs/TT Runs Trial Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Runs';
+    src: url('../tt_runs/TT Runs Trial Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Runs';
+    src: url('../tt_runs/TT Runs Trial Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Runs';
+    src: url('../tt_runs/TT Runs Trial Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Runs';
+    src: url('../tt_runs/TT Runs Trial Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+:root {
+    --primary-color: #006837;
+    --secondary-color: #FFD700;
+    --text-light: #ffffff;
+}
+
+body {
+    font-family: 'TT Runs', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f8f8;
+}
+
+.uk-container {
+    max-width: 1400px;
+}
+
+/* Menu Styles */
+.uk-navbar-container {
+    padding: 10px 0;
+}
+
+.uk-navbar-left {
+    margin-left: 20px;
+}
+
+.uk-navbar-right {
+    margin-right: 20px;
+}
+
+.uk-navbar-left img,
+.menu-logo {
+    height: 100px !important;
+    width: auto !important;
+    max-width: none !important;
+}
+
+.uk-logo {
+    padding: 0;
+}
+
+.uk-navbar-nav > li > a {
+    font-family: 'TT Runs', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 14px;
+    text-transform: none;
+    padding: 0 8px;
+    transition: color 0.3s ease;
+}
+
+.uk-navbar-nav > li > a:hover {
+    color: #FFD700;
+}
+
+.uk-navbar-nav > li.uk-active > a {
+    color: #FFD700;
+    font-weight: 700;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #002E00;
+    padding: 20px 0;
+    margin-top: auto;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    flex-shrink: 0;
+}
+
+footer p {
+    font-family: 'TT Runs', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Media Queries */
+@media (max-width: 960px) {
+    .uk-navbar-nav > li > a {
+        font-size: 12px;
+        padding: 0 6px;
+    }
+
+    .uk-navbar-left img,
+    .menu-logo {
+        height: 55px !important;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 640px) {
+    .uk-navbar-nav > li > a {
+        font-size: 11px;
+        padding: 0 4px;
+    }
+
+    .uk-navbar-left img,
+    .menu-logo {
+        height: 45px !important;
+    }
+
+    footer p {
+        font-size: 11px;
+    }
+} 

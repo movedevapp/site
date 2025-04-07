@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MoveFit - Aplicativo que recompensa você por se exercitar. Ganhe tokens MoveApe caminhando, correndo e mantendo uma vida saudável.">
+    <title>MoveFit - MoveApe</title>
+    <link rel="icon" type="image/svg+xml" href="images/moveApe_icon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/moveApe_icon.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/moveApe_icon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/moveApe_icon.svg">
+    <link rel="mask-icon" href="images/moveApe_icon.svg" color="#006837">
+    <meta name="msapplication-TileColor" content="#006837">
+    <meta name="theme-color" content="#006837">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit-icons.min.js"></script>
+    <!-- Menu Component -->
+    <script src="components/menu.js"></script>
+    <!-- Estilos Globais -->
+    <link rel="stylesheet" href="components/global.css">
+    <!-- Estilos da Página MoveFit -->
+    <link rel="stylesheet" href="components/movefit.css">
+</head>
+<body>
+    <!-- O menu será inserido aqui automaticamente pelo JavaScript -->
+
+    <!-- Seção MoveFit -->
+    <section class="movefit-section">
+        <div class="movefit-container">
+            <h1 class="movefit-title">MoviFit</h1>
+            
+            <div class="video-container">
+                <iframe 
+                    width="100%" 
+                    height="600" 
+                    src="https://www.youtube.com/embed/MKiKF7HyijE" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen
+                ></iframe>
+            </div>
+
+            <div class="logo-banner">
+                <img src="images/movefit_banner.webp" alt="Move Fit Banner">
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <p>Na MOVEFIT você só precisa andar para ganhar tokens $MOVEFIT! Adquirindo os NFTs você ganha ainda mais! Basta colocar sua carteira que possui o NFT no seu aplicativo MOVEFIT e caminhar ou correr para ganhar uma renda passiva de 1% do seu investimento ao dia em tokens!</p>
+                    <img src="images/moveApe_icon.svg" alt="Mascote" class="mascot-icon">
+                </div>
+                <div class="benefit-card">
+                    <p>O NFT disponível é um investimento de 0.16BNB e dará 1% desse valor em tokens todos os dais para você! Em breve traremos outras opções de NFTs.</p>
+                    <img src="images/moveApe_icon.svg" alt="Mascote" class="mascot-icon">
+                </div>
+                <div class="benefit-card">
+                    <p>Exclusividade e Escassez: Quantidades limitadas tornam cada NFT altamente valioso. Facilidade e Flexibilidade: Seus ganhos são automáticos e utilizáveis diretamente no marketplace. E seus NFTs também podem ser vendidos. Utilidade no app da MOVEFIT: Mova-se para ganhar! Não Deixe Esta Oportunidade Passar!</p>
+                    <img src="images/moveApe_icon.svg" alt="Mascote" class="mascot-icon">
+                </div>
+                <div class="benefit-card">
+                    <p>Os NFTs MOVE APE são o equilíbrio perfeito entre inovação, exclusividade e retorno financeiro. Com UNIDADES LIMITADAS é a sua chance de garantir um ATIVO ÚNICO e aproveitar renda passiva diária de forma simples e sustentável. Invista no futuro com MOVE APE e veja seu capital trabalhar por você!</p>
+                    <img src="images/moveApe_icon.svg" alt="Mascote" class="mascot-icon">
+                </div>
+            </div>
+
+            <div class="token-section">
+                <h2 class="token-title">Sobre o token $MOVEFIT</h2>
+                <p class="token-description">
+                    Além de ser um token de pagamento e de especulação, você pode lucrar com os tokens $MOVEfit passiva e eternamente! Você precisará enviar seus tokens em uma carteira-cofre específica e o próprio contrato identificará e pagará PARA SEMPRE sua parte nas taxas!!
+                </p>
+                <p class="token-description">
+                    Você recebe 5% de todas as taxas do token $MOVEFIT como reflexão passiva de $MOVEAPE na sua carteira!
+                </p>
+
+                <div class="contract-address" onclick="copyToClipboard('0xEcE598B2aF0C7Bb8F63724F8633548947F548f12')">
+                    CA: 0xEcE598B2aF0C7Bb8F63724F8633548947F548f12
+                </div>
+
+                <div class="platforms-grid">
+                    <a href="https://t.me/MOVEAPE_BOT" target="_blank" class="platform-card">
+                        <img src="images/moveape_wallet_card.webp" alt="MoveApe Wallet">
+                    </a>
+                    <a href="https://www.dexview.com/bsc/0xEcE598B2aF0C7Bb8F63724F8633548947F548f12" target="_blank" class="platform-card">
+                        <img src="images/dexview_card.webp" alt="DEXView">
+                    </a>
+                    <a href="https://pancakeswap.finance/swap?outputCurrency=0xEcE598B2aF0C7Bb8F63724F8633548947F548f12" target="_blank" class="platform-card">
+                        <img src="images/pancakeswap_card.webp" alt="PancakeSwap">
+                    </a>
+                    <a href="https://dexscreener.com/bsc/0xEcE598B2aF0C7Bb8F63724F8633548947F548f12" target="_blank" class="platform-card">
+                        <img src="images/dexscreener_card.webp" alt="Dexscreener">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 MoveApe. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                const contractAddress = document.querySelector('.contract-address');
+                contractAddress.classList.add('copied');
+                
+                setTimeout(() => {
+                    contractAddress.classList.remove('copied');
+                }, 2000);
+            }).catch(err => {
+                console.error('Erro ao copiar texto: ', err);
+            });
+        }
+    </script>
+</body>
+</html> 

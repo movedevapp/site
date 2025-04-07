@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MoveApe - A primeira criptomoeda brasileira que recompensa atividades físicas. Ganhe tokens caminhando, investindo e participando do ecossistema MoveApe.">
+    <title>MoveApe - A Criptomoeda que Move Você</title>
+    <link rel="icon" type="image/svg+xml" href="images/moveApe_icon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/moveApe_icon.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/moveApe_icon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/moveApe_icon.svg">
+    <link rel="mask-icon" href="images/moveApe_icon.svg" color="#006837">
+    <meta name="msapplication-TileColor" content="#006837">
+    <meta name="theme-color" content="#006837">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit-icons.min.js"></script>
+    <!-- Menu Component -->
+    <script src="components/menu.js"></script>
+    <link rel="preload" href="tt_runs/TT%20Runs%20Trial%20Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="tt_runs/TT%20Runs%20Trial%20Bold.ttf" as="font" type="font/ttf" crossorigin>
+    <!-- Estilos Gerais -->
+    <link rel="stylesheet" href="components/home.css">
+</head>
+<body>
+    <!-- O menu será inserido aqui automaticamente pelo JavaScript -->
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="uk-container uk-text-center">
+            <img src="images/moveape_coin.webp" alt="Move Coin" class="coin-logo" width="250" height="250">
+            <h1>A NOVA CRIPTOMOEDA DO<br><span class="gold-text">MERCADO LOCAL</span></h1>
+            <div class="button-container">
+                <a href="https://chat.whatsapp.com/LL4emcki3FhHqvHrAZCI3t" target="_blank" class="hero-button">Saber mais</a>
+                <a href="https://moveape.gitbook.io/whitepaper" target="_blank" class="hero-button">Whitepaper</a>
+            </div>
+            <div>
+                <div class="ca-address" onclick="copyToClipboard('0x8f4FA4c487DCA5901ACA36ba7934F5A4d2035100')">
+                    CA: 0x8f4FA4c487DCA5901ACA36ba7934F5A4d2035100
+                </div>
+            </div>
+            <h2 class="benefits-title uk-text-center" style="margin-top: 40px;">
+                <span class="mouse-scroll"></span>
+                Continuar explorando
+            </h2>
+        </div>
+    </div>
+
+    <!-- Benefits Section -->
+    <div class="benefits-section">
+        <div class="uk-container">
+            <div class="uk-grid uk-grid-medium uk-child-width-1-3@m" uk-grid>
+                <div>
+                    <div class="benefit-card">
+                        <img src="images/cart_coins.webp" alt="Compre via Pix" class="benefit-card-img" loading="lazy">
+                        <h3>Compre<br>via Pix</h3>
+                    </div>
+                </div>
+                <div>
+                    <div class="benefit-card">
+                        <img src="images/box_coins.webp" alt="Cashback" class="benefit-card-img" loading="lazy">
+                        <h3>Cashback<br>no comércio<br>local</h3>
+                    </div>
+                </div>
+                <div>
+                    <div class="benefit-card">
+                        <img src="images/nft.webp" alt="Rendimento NFTs" class="benefit-card-img" loading="lazy">
+                        <h3>Rendimento<br>Ativo através<br>de NFTS</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Marketplace Section -->
+    <div id="comprar" class="marketplace-section">
+        <div class="uk-container">
+            <h2>Onde Comprar</h2>
+            <div class="uk-grid uk-grid-medium uk-child-width-1-2@m" uk-grid>
+                <div>
+                    <a href="https://t.me/MOVEAPE_BOT" target="_blank" class="marketplace-link">
+                        <img src="images/moveape_wallet_card.webp" alt="Move APE Wallet" class="marketplace-image" loading="lazy" width="280" height="160">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.dexview.com/bsc/0x8f4FA4c487DCA5901ACA36ba7934F5A4d2035100" target="_blank" class="marketplace-link">
+                        <img src="images/dexview_card.webp" alt="DEXView" class="marketplace-image" loading="lazy" width="280" height="160">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://pancakeswap.finance/swap?inputCurrency=BNB&outputCurrency=0x8f4FA4c487DCA5901ACA36ba7934F5A4d2035100&exactAmount=&exactField=INPUT" target="_blank" class="marketplace-link">
+                        <img src="images/pancakeswap_card.webp" alt="Pancakeswap" class="marketplace-image" loading="lazy" width="280" height="160">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://dexscreener.com/bsc/0x8f4FA4c487DCA5901ACA36ba7934F5A4d2035100" target="_blank" class="marketplace-link">
+                        <img src="images/dexscreener_card.webp" alt="Dexscreener" class="marketplace-image" loading="lazy" width="280" height="160">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="sobre" class="about-section">
+        <div class="uk-container">
+            <h2>Sobre Nós</h2>
+            
+            <div class="mascot-container">
+                <img src="images/mascote_moveape_1.webp" alt="Move Mascot" class="mascot-image" loading="lazy" width="300" height="450">
+            </div>
+
+            <div class="uk-grid" uk-grid>
+                <div class="uk-width-1-2">
+                    <div class="about-card">
+                        <h3>Moeda de Pagamento para o Comércio</h3>
+                        <p>Desenvolvimento de uma plataforma de compra e venda onde os pagamentos poderão ser feitos com criptomoedas, tornando as transações mais rápidas e acessíveis.</p>
+                    </div>
+                </div>
+                <div class="uk-width-1-2">
+                    <div class="about-card" style="margin-left: auto;">
+                        <h3>Facilitação da Transição do Público Web 2 para Web 3</h3>
+                        <p>Criação de uma WALLET PRÓPRIA, de fácil instalação e uso, permitindo a compra e venda de moedas via PIX, tornando o acesso ao mundo das criptomoedas mais simples e intuitivo.</p>
+                    </div>
+                </div>
+                <div class="uk-width-1-2">
+                    <div class="about-card">
+                        <h3>Aplicativo de Incentivo à Atividade Física</h3>
+                        <p>Utilização de um sistema de GPS integrado a NFTs para estimular os usuários a praticarem atividades físicas e serem recompensados por isso.</p>
+                    </div>
+                </div>
+                <div class="uk-width-1-2">
+                    <div class="about-card" style="margin-left: auto;">
+                        <h3>Plataforma para Investidores</h3>
+                        <p>Construção de uma plataforma completa para investidores iniciantes, com ferramentas como rastreamento de ativos, gráficos e sistema de Swap para facilitar negociações.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tokenomics Section -->
+<div id="tokenomics-moveape" class="tokenomics-section">
+    <div class="tokenomics-content">
+        <div class="tokenomics-left">
+            <img src="images/mascote_moveape_tokenomics.webp" alt="Move Ape Mascot" class="tokenomics-mascot" loading="lazy" width="350" height="525">
+        </div>
+        <div class="tokenomics-right">
+            <h2 class="tokenomics-title">TOKENOMICS <br>$MOVEAPE</h2>
+            <div class="tokenomics-chart-container">
+                <div class="chart-info">
+                    <div class="chart-item">
+                        <div class="chart-color burn"></div>
+                        72% Burn
+                    </div>
+                    <div class="chart-item">
+                        <div class="chart-color locked"></div>
+                        15% locked for 6 months
+                    </div>
+                    <div class="chart-item">
+                        <div class="chart-color liquidity"></div>
+                        13% liquidity
+                    </div>
+
+                </div>
+                <div class="chart-visual">
+                    <img src="images/grafic_moveape.svg" alt="Tokenomics Chart">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Launch Section -->
+    <div class="launch-section">
+        <div class="uk-container">
+            <div class="launch-content">
+                <div class="mascot-container">
+                    <img src="images/mascote_movefit.webp" alt="Mascote Move Fit" class="mascot-image" loading="lazy" width="300" height="450">
+                </div>
+                <div class="text-content">
+                    <h2>LANÇAMENTO DO APLICATIVO</h2>
+                    <img src="images/movefit_logo_verde.svg" alt="Move Fit Logo" class="move-logo" loading="lazy" width="200" height="50">
+                    <div class="launch-date">Dia 22 de abril</div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <!-- Tokenomics movefit Section -->
+ <div id="tokenomics-movefit" class="tokenomics-section">
+    <div class="tokenomics-content">
+        <div class="tokenomics-right">
+            <h2 class="tokenomics-title">DISTRIBUIÇÃO <br>$MOVEFIT</h2>
+            <P> Fornecimento: 250 milhões</P>
+            <div class="tokenomics-chart-container">
+                <div class="chart-info">
+                    <div class="chart-item">
+                        <div class="chart-color burn"></div>
+                        40% Liquidez
+                    </div>
+                    <div class="chart-item">
+                        <div class="chart-color locked"></div>
+                        58% Venda privada = queima
+                    </div>
+                    <div class="chart-item">
+                        <div class="chart-color pool"></div>
+                        <div>
+                            2% para pool de pagamento NFT
+                            <div style="font-size: 14px; margin-top: 5px;">(bloqueado até o lançamento do aplicativo; desbloqueado por meio de vesting)</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="chart-visual">
+                    <img src="images/grafic_movefit.svg" alt="Tokenomics Chart">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Seção Move Fit -->
+    <section class="movefit-section">
+        <div class="uk-container">
+            <div class="movefit-content">
+                <div class="movefit-left">
+                    <img src="images/movefit_logo_verde.svg" alt="Move Fit Logo" class="movefit-logo" loading="lazy" width="300" height="75">
+                    <ul class="movefit-list">
+                        <li>- Ande e ganhe moedas!</li>
+                        <li>- Adquira seu NFT e ganhe ainda mais moedas!</li>
+                        <li>- Renda passiva cuidando da sua saúde!</li>
+                        <li>- Investimento na carteira e no corpo!</li>
+                    </ul>
+                    <a href="movefit.html" class="uk-button uk-button-primary saiba-mais-btn">Saiba Mais</a>
+                </div>
+                <div class="movefit-right">
+                    <img src="images/mascote_moveape_fundo_verde.webp" alt="Mascote Move Fit" class="movefit-mascot" loading="lazy" width="400" height="600">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Roadmap Section -->
+    <div id="roadmap" class="roadmap-section">
+        <div class="uk-container">
+            <h2>ROADMAP</h2>
+            <div class="uk-grid uk-grid-medium uk-child-width-1-2@m" uk-grid>
+                <div>
+                    <div class="roadmap-card">
+                        <h3>FASE 1:</h3>
+                        <ul class="roadmap-list">
+                            <li class="completed">
+                                Criação e desenvolvimento do projeto na WEB3
+                            </li>
+                            <li class="completed">
+                                Marketing nacional
+                            </li>
+                            <li class="completed">
+                                Pré-venda do token
+                            </li>
+                            <li class="completed">
+                                Airdrop
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="roadmap-card">
+                        <h3>FASE 2:</h3>
+                        <ul class="roadmap-list">
+                            <li class="completed">
+                                Lançamento do token
+                            </li>
+                            <li class="completed">
+                                Fortalecimento da comunidade
+                            </li>
+                            <li class="completed">
+                                Venda de NFTs
+                            </li>
+                            <li class="completed">
+                                Desenvolvimento do aplicativo MOVEfit
+                            </li>
+                            <li class="completed">
+                                Desenvolvimento da carteira digital MOVEAPE
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="roadmap-card">
+                        <h3>FASE 3:</h3>
+                        <ul class="roadmap-list">
+                            <li class="completed">
+                                Lançamento da carteira digital MOVEAPE para compras via cripto e via pix
+                            </li>
+                            <li class="completed">
+                                Parcerias com o comércio local
+                            </li>
+                            <li>
+                                Lançamento do token $MOVEFIT (15/04)
+                            </li>
+                            <li>
+                                Lançamento do aplicativo MOVEfit [22/04]
+                            </li>
+                            <li>
+                                Parcerias com academias
+                            </li>
+                            <li>
+                                Listagens em corretoras tier 2 e 3
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="roadmap-card">
+                        <h3>FASE 4:</h3>
+                        <ul class="roadmap-list">
+                            <li>E-commerce de produtos fitness</li>
+                            <li>Desenvolvimento e ampliação da Carteira digital</li>
+                            <li>Listagens em corretoras tier 1</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="uk-section uk-section-secondary uk-light" style="background-color: #002E00; padding: 15px 0;">
+        <div class="uk-container uk-text-center">
+            <p>© 2025 MoveApe. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                const contractAddress = document.querySelector('.ca-address');
+                contractAddress.classList.add('copied');
+                
+                setTimeout(() => {
+                    contractAddress.classList.remove('copied');
+                }, 2000);
+            }).catch(err => {
+                console.error('Erro ao copiar texto: ', err);
+            });
+        }
+    </script>
+</body>
+</html> 

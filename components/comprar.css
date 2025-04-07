@@ -1,0 +1,221 @@
+@font-face {
+    font-family: 'TT Runs';
+    src: url('../tt_runs/TT Runs Trial Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Runs';
+    src: url('../tt_runs/TT Runs Trial Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Runs';
+    src: url('../tt_runs/TT Runs Trial Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Runs';
+    src: url('../tt_runs/TT Runs Trial Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Runs';
+    src: url('../tt_runs/TT Runs Trial Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Runs';
+    src: url('../tt_runs/TT Runs Trial Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+body {
+    font-family: 'TT Runs', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f8f8;
+}
+
+.purchase-section {
+    flex: 1;
+    padding: 80px 20px;
+}
+
+.purchase-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.purchase-title {
+    color: #002C00;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.purchase-title::after {
+    display: none;
+}
+
+.steps-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.step-item {
+    background-color: #069C3E;
+    color: white;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.step-item:last-child {
+    margin-bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6, 
+.uk-navbar-nav > li > a,
+.exchange-card h3,
+.exchange-card p,
+.exchange-card a {
+    font-family: 'TT Runs', sans-serif;
+}
+
+.exchange-card h3 {
+    font-weight: 900;
+}
+
+.exchange-card p {
+    font-weight: 400;
+}
+
+.exchange-card a {
+    font-weight: 700;
+}
+
+.uk-navbar-container {
+    padding: 10px 0;
+}
+
+.uk-navbar-left {
+    margin-left: 20px;
+}
+
+.uk-navbar-right {
+    margin-right: 20px;
+}
+
+.uk-navbar-left img,
+.menu-logo {
+    height: 100px !important;
+    width: auto !important;
+    max-width: none !important;
+}
+
+.uk-logo {
+    padding: 0;
+}
+
+.uk-container {
+    max-width: 1400px;
+}
+
+footer p {
+    font-family: 'TT Runs', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+}
+
+@media (max-width: 960px) {
+    .purchase-section {
+        padding: 60px 20px;
+    }
+
+    .purchase-title {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    .step-item {
+        font-size: 16px;
+    }
+
+    .uk-navbar-nav > li > a {
+        font-size: 12px;
+        padding: 0 6px;
+    }
+
+    .uk-navbar-left img,
+    .menu-logo {
+        height: 55px !important;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 640px) {
+    .purchase-section {
+        padding: 40px 20px;
+    }
+
+    .purchase-title {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+    .purchase-title::after {
+        content: 'Comprar via pix';
+        display: block;
+        font-size: 28px;
+        font-weight: bold;
+        color: #002C00;
+    }
+
+    .purchase-title span {
+        display: none;
+    }
+
+    .step-item {
+        font-size: 14px;
+        padding: 12px 15px;
+    }
+
+    .uk-navbar-nav > li > a {
+        font-size: 11px;
+        padding: 0 4px;
+    }
+
+    .uk-navbar-left img,
+    .menu-logo {
+        height: 45px !important;
+    }
+
+    footer p {
+        font-size: 11px;
+    }
+    
+    .step-item img {
+        height: 20px !important;
+        width: auto !important;
+    }
+} 

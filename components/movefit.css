@@ -1,0 +1,301 @@
+@font-face {
+    font-family: 'TT Runs';
+    src: url('../tt_runs/TT Runs Trial Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Runs';
+    src: url('../tt_runs/TT Runs Trial Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root {
+    --primary-color: #006837;
+    --secondary-color: #FFD700;
+    --text-light: #ffffff;
+}
+
+body {
+    font-family: 'TT Runs', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f8f8;
+}
+
+.movefit-section {
+    flex: 1;
+    padding: 40px 20px;
+}
+
+.movefit-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+.movefit-title {
+    color: #002C00;
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.video-container {
+    background: #000;
+    width: 100%;
+    aspect-ratio: 16/9;
+    margin: 0 auto 40px;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo-banner {
+    text-align: center;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.logo-banner img {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.benefit-card {
+    background-color: #069C3E;
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    position: relative;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.benefit-card p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.mascot-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: auto;
+}
+
+.token-section {
+    text-align: center;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.token-title {
+    color: #002C00;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.token-description {
+    color: #002C00;
+    font-size: 16px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.contract-address {
+    background-color: #069C3E;
+    color: white;
+    padding: 25px 20px;
+    border-radius: 15px;
+    font-family: 'TT Runs', monospace;
+    font-size: 14px;
+    margin: 30px auto;
+    word-break: break-all;
+    max-width: 800px;
+    text-align: center;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.contract-address:hover {
+    background-color: #057f33;
+}
+
+.contract-address::after {
+    content: "Clique para copiar";
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: #002C00;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.contract-address:hover::after {
+    opacity: 1;
+}
+
+.contract-address.copied::after {
+    content: "Copiado!";
+    color: #069C3E;
+}
+
+.platforms-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 40px auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+.platform-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.platform-card:hover {
+    transform: scale(1.02);
+}
+
+.platform-card img {
+    height: 80px;
+    width: auto;
+}
+
+@media (max-width: 960px) {
+    .movefit-section {
+        padding: 30px 15px;
+    }
+
+    .movefit-title {
+        font-size: 32px;
+        margin-bottom: 25px;
+    }
+
+    .benefits-grid {
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+
+    .benefit-card {
+        padding: 25px;
+        min-height: 240px;
+    }
+
+    .benefit-card p {
+        font-size: 15px;
+        line-height: 1.5;
+        margin-bottom: 35px;
+    }
+
+    .mascot-icon {
+        width: 50px;
+    }
+
+    .token-title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .token-description {
+        font-size: 15px;
+        padding: 0 15px;
+    }
+
+    .platform-card img {
+        height: 70px;
+    }
+}
+
+@media (max-width: 640px) {
+    .movefit-section {
+        padding: 20px 10px;
+    }
+
+    .movefit-title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-bottom: 25px;
+    }
+
+    .benefit-card {
+        padding: 20px;
+        min-height: 220px;
+    }
+
+    .benefit-card p {
+        font-size: 14px;
+        line-height: 1.4;
+        margin-bottom: 30px;
+    }
+
+    .mascot-icon {
+        width: 45px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .token-title {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .token-description {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .contract-address {
+        font-size: 12px;
+        padding: 12px 15px;
+        margin: 20px auto;
+    }
+
+    .platforms-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin: 30px auto;
+    }
+
+    .platform-card img {
+        height: 80px;
+    }
+} 
