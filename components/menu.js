@@ -29,7 +29,7 @@ function insertMenu() {
                             </a>
                         </li>
                         <li>
-                            <a href="https://pixape.fun/movefit/" target="_blank" class="app-button">
+                            <a href="https://movefit.fun/" target="_blank" class="app-button">
                                 <span style="color: #002E00;">Ir para o APP</span>
                             </a>
                         </li>
@@ -51,7 +51,7 @@ function insertMenu() {
                 <li><a href="/cashback">Cashback</a></li>
                 <li><a href="https://moveape.gitbook.io/whitepaper" target="_blank" >Whitepaper</a></li>
                 <li class="app-button-mobile">
-                    <a href="https://pixape.fun/movefit/" target="_blank" class="app-button">
+                    <a href="https://movefit.fun/" target="_blank" class="app-button">
                         <span>Ir para o APP</span>
                     </a>
                 </li>
